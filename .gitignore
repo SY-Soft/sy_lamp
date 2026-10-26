@@ -1,0 +1,51 @@
+```gitignore
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Keep demo Laravel environment
+!projects/laravel/.env
+
+# PHP dependencies
+**/vendor/
+
+# Laravel runtime files
+**/storage/logs/*
+**/storage/framework/cache/*
+**/storage/framework/sessions/*
+**/storage/framework/views/*
+**/bootstrap/cache
+**/public/build/
+
+# Laravel runtime storage
+/projects/laravel/storage
+
+# Node dependencies
+**/node_modules/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Temporary files
+*.log
+*.tmp
+*.bak
+
+# MySQL runtime files
+/mysql/*.pid
+/mysql/*.sock*
+/mysql/auto.cnf
+/mysql/binlog.*
+/mysql/ib_buffer_pool*
+/mysql/ibtmp*
+/mysql/#ib_*
+/mysql/#innodb_temp/
+/mysql/#innodb_doublewrite/
+```
