@@ -126,9 +126,9 @@ xdebug.client_host=host.docker.internal
 xdebug.client_port=9003
 ```
 
-В PhpStorm необходимо настроить сервер отладки и сопоставление локальных файлов проекта с каталогом внутри контейнера `/var/www/projects/ИМЯ_ПРОЕКТА`.
+В PhpStorm сервер отладки 'Host="~^(?<project>[a-zA-Z0-9_-]+)\.localhost$"' и сопоставление локальных файлов проекта с каталогом внутри контейнера `/var/www/projects/ИМЯ_ПРОЕКТА`.
 
-Для запуска отладки используется триггер `XDEBUG_TRIGGER=1`.
+[Подробнее про настройку Xdebug в PhpStorm](docs/xdebug.md)
 
 ## Данные MySQL и перенос окружения
 
