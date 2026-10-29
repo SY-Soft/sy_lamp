@@ -24,19 +24,20 @@ docker compose up -d --build
 **Меню: File → Settings → PHP**
 
 Жмем "..." напротив CLI Interpreter → "*+*" → "From Docker, Vagrant, VM, WSL, Remote..."
-→ Dcoker → Image name:sy_lamp-php:latest → ok → apply → ok
+→ Dcoker → Image name:sy_lamp_free-php:latest → ok → apply → ok
 
 **PHP language level:** 8.3
 
-**CLI Interpreter:** Image name:sy_lamp-php:latest
+**CLI Interpreter:** Image name:sy_lamp_free-php:latest
 
 #### 3. Настройка сервера
 
 В этом же окне выбираем PHP → Servers → "*+*"
 
-**Name:** ~^(?<project>[a-zA-Z0-9_-]+)\.localhost$
+**Name:** ~^(?\<project>[a-zA-Z0-9_-]+)\.localhost$
 
-**Host:** ~^(?<project>[a-zA-Z0-9_-]+)\.localhost$
+**Host:** ~^(?\<project>[a-zA-Z0-9_-]+)\.localhost$
+
 
 Включаем "Use path mappings (select if the server is remote or symlinks are used)"
 
