@@ -34,9 +34,9 @@ docker compose up -d --build
 
 В этом же окне выбираем PHP → Servers → "*+*"
 
-**Name:** ~^(?\<project>[a-zA-Z0-9_-]+)\.localhost$
+**Name:** ~^(?\<project>[a-zA-Z0-9_-]+)\\.localhost$
 
-**Host:** ~^(?\<project>[a-zA-Z0-9_-]+)\.localhost$
+**Host:** ~^(?\<project>[a-zA-Z0-9_-]+)\\.localhost$
 
 
 Включаем "Use path mappings (select if the server is remote or symlinks are used)"
